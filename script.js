@@ -14,6 +14,7 @@ document.getElementById("createForm").addEventListener("submit", async (e) => {
   });
 
   const data = await response.json();
+  console.log(data);
   window.alert("Usuário Criado");
 });
 
@@ -45,6 +46,7 @@ document.getElementById("updateForm").addEventListener("submit", async (e) => {
   });
 
   const data = await response.json();
+  console.log(data);
   window.alert("Usuário Atualizado");
 });
 
@@ -57,5 +59,6 @@ document.getElementById("deleteForm").addEventListener("submit", async (e) => {
   });
 
   const data = await response.json();
+  console.log(data);
   window.alert("Usuário Deletado");
 });
