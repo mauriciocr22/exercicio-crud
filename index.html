@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio CRUD</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Exercício de CRUD</h1>
+    <div class="wrapper">
+      <div class="formsConteiner">
+        <h2>Criar Usuário</h2>
+        <form id="createForm" class="text-3xl">
+          <input type="text" id="createName" placeholder="Nome" required />
+          <input type="email" id="createEmail" placeholder="Email" required />
+          <button type="submit">Criar</button>
+        </form>
+
+        <h2>Atualizar Usuário</h2>
+        <form id="updateForm">
+          <input
+            type="text"
+            id="updateId"
+            placeholder="ID de usuário"
+            required
+          />
+          <input type="text" id="updateName" placeholder="Nome" />
+          <input type="email" id="updateEmail" placeholder="Email" />
+          <button type="submit">Atualizar</button>
+        </form>
+
+        <h2>Deletar Usuário</h2>
+        <form id="deleteForm">
+          <input
+            type="text"
+            id="deleteId"
+            placeholder="ID de usuário"
+            required
+          />
+          <button type="submit">Deletar</button>
+        </form>
+      </div>
+
+      <div class="readConteiner">
+        <h2>Ler Usuários</h2>
+        <button id="readUsers">Ver Usuários</button>
+        <ul id="userList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
